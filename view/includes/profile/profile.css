@@ -1,0 +1,212 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .sidebar {
+    width: 20%;
+    background-color: #2f3a56;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+  }
+  
+  .sidebar .brand {
+    margin-bottom: 30px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .sidebar nav ul li a.active,
+  .sidebar nav ul li a:hover {
+    background-color: #536dfe;
+  }
+  
+  .main-content {
+    padding: 20px;
+    width: 55%;
+    margin-left: 220px;
+  
+  }
+  
+  .main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-content header input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .main-content header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-content header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .profile-section {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-section h2 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group button {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .form-group button {
+    background-color: #536dfe;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+  }
+  
+  .form-group button:hover {
+    background-color: #2f3a56;
+  }
+  
+  .photo-preview {
+    margin-top: 20px;
+  }
+  
+  .photo-preview h3 {
+    margin-top: 0;
+  }
+  
+  .photo-preview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .button {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #536dfe;
+  }
+
+/* Form Container */
+#profileForm {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #profileForm {
+      width: 90%;
+  }
+}

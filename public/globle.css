@@ -1,0 +1,173 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(24 22 22 / 99%);
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.nav-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+}
+
+ul a {
+  list-style: none;
+  text-decoration: none;
+  margin: 30px;
+  cursor: pointer;
+}
+
+ul a li {
+  color: white;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(24 22 22 / 99%);
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.nav-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+}
+
+ul a {
+  list-style: none;
+  text-decoration: none;
+  margin: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+ul a li {
+  color: white;
+}
+
+nav ul ::after{
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul :hover::after{
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  padding: 0 50px;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.col-1 img {
+  width: 175px;
+}
+
+.icon img {
+  width: 30px;
+  height: 25px;
+  padding: 5px;
+  object-fit: contain;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.col-2 a {
+  text-decoration: none;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.copyright p {
+  font-size: 20px;
+  margin: 20px 0;
+}
